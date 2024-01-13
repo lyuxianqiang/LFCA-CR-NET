@@ -1,9 +1,13 @@
 # LFCA-CR-NET
 Repository for International Journal of Computer Vision paper "Probabilistic-based Feature Learning of Light Fields for Compressive Imaging and Denoising"
+
 https://trebuchet.public.springernature.app/get_content/6401293d-1745-4b94-9f65-b206fb1b5f3e?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240112&utm_content=10.1007/s11263-023-01974-9
 
 # Dataset
-You can download the dataset for synthetic LF data from 
+You can download the dataset for LF denosing from 
+
+https://drive.google.com/drive/folders/1emg1Ll2KPmqkMGuEvLOp7fA6i_kEBYtM?usp=sharing
+
 
 # Requirements
 - Python 3.8.8
