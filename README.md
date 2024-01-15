@@ -12,7 +12,7 @@ For the compressive LF imaging, we provide MATLAB code for preparing the trainin
 
 
 # Requirements
-- Python 3.8.8
+- Python 3.8.3
 - PyTorch 1.13.1
 
 
