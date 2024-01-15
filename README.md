@@ -8,6 +8,8 @@ You can download the dataset for LF denosing from
 
 https://drive.google.com/drive/folders/1emg1Ll2KPmqkMGuEvLOp7fA6i_kEBYtM?usp=sharing
 
+For the compressive LF imaging, we provide MATLAB code for preparing the training and test data. Please first download light field datasets, and put them into corresponding folders in LFData.
+
 
 # Requirements
 - Python 3.8.8
@@ -15,15 +17,17 @@ https://drive.google.com/drive/folders/1emg1Ll2KPmqkMGuEvLOp7fA6i_kEBYtM?usp=sha
 
 
 # Training
-Set the training datapath, and learning rate according to data type. You can also change the batchsize accordingly. 
 
-And run 'python train_synf.py'
+For the tasks of compressive imaging and denoising, it is necessary to pretrain a model initially and then utilize this pretrained model to obtain the final Probabilistic-based Feature Embedding (PFE) model. Let's consider the LFCA as an example.
 
-When training on the L3F dataset, it is advisable to configure the learning rate to 5e-4 for L3F-20, 1e-4 for L3F-50, and 1e-4 for L3F-100, respectively.
+First, pretrain the model by running 'LFCA-PBF-preTrain.ipynb'.
 
-For other datasets, we suggest adapting the learning rate selection strategy based on the average brightness level of the dataset. Specifically, a lower learning rate is recommended for datasets with darker overall brightness.
+Next, train the PBF model by running 'LFCA-PBF-Train-Original.ipynb'.
+
+You will need to configure the training data path and set the learning rate according to the type of data you are working with. The batch size can also be adjusted as needed.
 
 # Testing
-Set the testing datapath. 
 
-And run 'python test_synf.py'
+Set the testing configureation. 
+
+And run LFCA-Test.ipynb or LFDN-Test.ipynb
