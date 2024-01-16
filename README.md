@@ -18,11 +18,11 @@ For the compressive LF imaging, we provide MATLAB code for preparing the trainin
 
 # Training
 
-For the tasks of compressive imaging and denoising, it is necessary to pretrain a model initially and then utilize this pretrained model to obtain the final Probabilistic-based Feature Embedding (PFE) model. Let's consider the LFCA as an example.
+For the tasks of compressive imaging and denoising, it is necessary to pretrain a model initially and then utilize this pretrained model to obtain the final Probabilistic-based Feature Embedding (PFE) model. Let's consider the LFCA task as an example.
 
-First, pretrain the model by running 'LFCA-PBF-preTrain.ipynb'.
+First, pretrain the model by running 'LFCA-PFE-preTrain.ipynb'.
 
-Next, train the PBF model by running 'LFCA-PBF-Train-Original.ipynb'.
+Next, train the PFE model by running 'LFCA-PFE-Train-Original.ipynb'.
 
 You will need to configure the training data path and set the learning rate according to the type of data you are working with. The batch size can also be adjusted as needed.
 
